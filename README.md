@@ -1,5 +1,6 @@
 ## Introduction
 Welcome to the official repository of our paper "[*Semi-Supervised Change Detection With Boundary Refinement Teacher*](https://ieeexplore.ieee.org/document/10965597)"!
+
 Our paper has been accepted by IEEE Transactions on Geoscience and Remote Sensing (TGRS)
 
 ## Citation
