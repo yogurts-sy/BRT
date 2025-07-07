@@ -28,7 +28,7 @@ Comparison experimental results on the DSIFN-CD dataset. Except for kappa, all s
 </p>
 
 ## Reproduce
-We provide the student model weights and BDN weights for the WHU-CD and LEVIR-CD datasets. Please download them [here](https://drive.google.com/drive/folders/1E1YKd1tM90AddHYM-_DhcnLSXW9Z9Fp9?usp=sharing). We warmly welcome comparisons with our work. Please place the CD and BDN of the dataset in the corresponding `exp` folder in the corresponding section of the code.
+We provide the student model weights and BDN weights for the WHU-CD and LEVIR-CD datasets. Please download them [here](https://drive.google.com/drive/folders/1E1YKd1tM90AddHYM-_DhcnLSXW9Z9Fp9?usp=sharing). We warmly welcome comparisons with our work. Please place the `CD` and `BDN` of the dataset in the corresponding `exp` folder in the corresponding section of the code.
 
 For example, reproducing the result of WHU-CD 40%:
 * `Google Drive/BRT_CD/exp/WHU/40/CD/best.pth` -> `BRT/exp/WHU/40/CD/best.pth`
@@ -52,7 +52,7 @@ python eval_BRT-SemiCD.py
 
 ## Train
 ### Option 1. Train BRT with our pretrained BDN weights
-We provide BDN weights of 5%, 10%, 20%, and 40% for the WHU-CD and LEVIR-CD datasets [here](https://drive.google.com/drive/folders/1E1YKd1tM90AddHYM-_DhcnLSXW9Z9Fp9?usp=sharing). Please place it in the BDN folder corresponding to the `exp` dataset.
+We provide BDN weights of 5%, 10%, 20%, and 40% for the WHU-CD and LEVIR-CD datasets [here](https://drive.google.com/drive/folders/1E1YKd1tM90AddHYM-_DhcnLSXW9Z9Fp9?usp=sharing). Please place it in the `BDN` folder corresponding to the `exp` dataset.
 
 For example, training WHU-CD 40%:
 * `Google Drive/BRT_CD/exp/WHU/40/BDN/best.pth` -> `BRT/exp/WHU/40/BDN/best.pth`
@@ -65,7 +65,7 @@ python train_BRT-SemiCD.py 2>&1 | tee WHU_40.log
 
 ### Option 2. Train BRT from Zero (need to pretrain BDN)
 
-Please refer to [BIBR](https://github.com/yogurts-sy/BIBR) to pretrain BDN and place its weight in the BDN folder corresponding to the `exp` dataset. The training of BDN utilizes boundary blocks cropped from semi-supervised datasets with ratios of 5%, 10%, 20%, and 40%.
+Please refer to [BIBR](https://github.com/yogurts-sy/BIBR) to pretrain BDN weights and place its weights in the `BDN` folder corresponding to the `exp` dataset. The training of BDN utilizes boundary blocks cropped from semi-supervised datasets with ratios of 5%, 10%, 20%, and 40%.
 
 Replace the dataset path and ratio in the code and run the script below.
 ```
