@@ -28,11 +28,23 @@ Comparison experimental results on the DSIFN-CD dataset. Except for kappa, all s
 </p>
 
 ## Reproduce
-We provide the student model weights and BDN weights for the WHU-CD and LEVIR-CD datasets. Please download them [here](https://drive.google.com/drive/folders/1E1YKd1tM90AddHYM-_DhcnLSXW9Z9Fp9?usp=sharing). We warmly welcome comparisons with our work. Please place the `CD` and `BDN` of the dataset in the corresponding `exp` folder in the corresponding section of the code.
+We provide the student model weights and BDN weights for the WHU-CD and LEVIR-CD datasets. Please download them below. We warmly welcome comparisons with our work. Please place the CD and BDN of the dataset in the corresponding `exp` folder in the corresponding section of the code.
+
+### Student model weights and BDN weights
+
+| Dataset/Ratio | CD/BDN (ckpt) | Dataset/Ratio | CD/BDN (ckpt) |
+| :---: | :---: | :---: | :---: |
+| WHU-CD 5% | [[CD](https://drive.google.com/file/d/1qHzMyIalO_Elz0VzFqx1UNGlo6szLtV6/view?usp=sharing)]/[[BDN](https://drive.google.com/file/d/1QEH3ukCHtMN97ildZ7KKiBXWBMHgugMc/view?usp=sharing)] | LEVIR-CD 5% | [[CD](https://drive.google.com/file/d/1SVqR59Sx3aWeDZB2SYZwK4lAPid6YxLU/view?usp=sharing)]/[[BDN](https://drive.google.com/file/d/1JMcrhJdbzF_Zm07JX_LPcZYkfbPp4RD9/view?usp=sharing)] |
+| WHU-CD 10% | [[CD](https://drive.google.com/file/d/173PnHODVpbhK8BAr9thnnUUjF4xHXrw0/view?usp=sharing)]/[[BDN](https://drive.google.com/file/d/1wvXH-CLvh-9uSadEoj1g-gG6TOmuiDvt/view?usp=sharing)] | LEVIR-CD 10% | [[CD](https://drive.google.com/file/d/1Z0r9KvYkhqrgAhQMgrOO5_uiPi7jUPEp/view?usp=sharing)]/[[BDN](https://drive.google.com/file/d/1B0bcfCh7_maS4OEOCPpim4NyzFsH7xSq/view?usp=sharing)] |
+| WHU-CD 20% | [[CD](https://drive.google.com/file/d/1WDiTrFtmFJHxLGyJEIvhQKqVU82a_7MT/view?usp=sharing)]/[[BDN](https://drive.google.com/file/d/1ObVFe2sSSMDgTpC37zx1GiadYO5uRUly/view?usp=sharing)] | LEVIR-CD 20% | [[CD](https://drive.google.com/file/d/1VcD9AYzAoC29keJ1u1H-lqu9vPWdF9UO/view?usp=sharing)]/[[BDN](https://drive.google.com/file/d/1mZbTjELnEJXGzA_-0j27Lo15giterpBq/view?usp=sharing)] |
+| WHU-CD 40% | [[CD](https://drive.google.com/file/d/1ajKELw1W_iMSHDWLEyOJ_v2x0Oan63Fz/view?usp=sharing)]/[[BDN](https://drive.google.com/file/d/1VgxEVdyvSXXW2RL92thhlJa7n4uDmjq7/view?usp=sharing)] | LEVIR-CD 40% | [[CD](https://drive.google.com/file/d/1ePys63U_C3OvrXInr7B1dae36zFDwOdm/view?usp=sharing)]/[[BDN](https://drive.google.com/file/d/1Oi8bd6-FJWe_pj7wR_-IurP-DN2ATsqi/view?usp=sharing)] |
+
+Alternatively, you can download weights using the [Google Drive folder path](https://drive.google.com/drive/folders/1E1YKd1tM90AddHYM-_DhcnLSXW9Z9Fp9?usp=sharing).
+
 
 For example, reproducing the result of WHU-CD 40%:
-* `Google Drive/BRT_CD/exp/WHU/40/CD/best.pth` -> `BRT/exp/WHU/40/CD/best.pth`
-* `Google Drive/BRT_CD/exp/WHU/40/BDN/best.pth` -> `BRT/exp/WHU/40/BDN/best.pth`
+* `Google Drive/~/best.pth` -> `BRT/exp/WHU/40/CD/best.pth`
+* `Google Drive/~/best.pth` -> `BRT/exp/WHU/40/BDN/best.pth`
 
 ### Pretrained Backbone
 
